@@ -71,6 +71,7 @@ namespace program
    extern void mm_A_calculation();
    extern void exchange_stiffness();
 	extern void electrical_pulse();
+	extern void masked_grain_cmc();
 
 	// Sundry programs and diagnostics not under general release
 	extern int LLB_Boltzmann();

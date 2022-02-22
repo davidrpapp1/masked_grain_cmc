@@ -150,6 +150,11 @@ namespace program{
             program::program=54;
             return true;
          }
+         test="masked-grain-cmc";
+            if(value==test){
+            program::program=55;
+            return true;
+         }
          test="field-sweep";
          if(value==test){
             program::program=70;
@@ -186,6 +191,7 @@ namespace program{
             std::cerr << "\t\"hybrid-cmc\"" << std::endl;
             std::cerr << "\t\"reverse-hybrid-cmc\"" << std::endl;
             std::cerr << "\t\"static-hysteresis-loop\"" << std::endl;
+            std::cerr << "\t\"masked-grain-cmc\"" << std::endl;
             terminaltextcolor(WHITE);
             err::vexit();
          }

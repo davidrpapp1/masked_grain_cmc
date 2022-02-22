@@ -7,10 +7,13 @@
 #------------------------------------------
 # Creation attributes:
 #------------------------------------------
-dimensions:unit-cell-size = 3.54 !A
-dimensions:system-size-x = 7.7 !nm
-dimensions:system-size-y = 7.7 !nm
-dimensions:system-size-z = 7.7 !nm
+create:voronoi-rounded-grains
+create:voronoi-film
+dimensions:system-size-x = 14 !nm
+dimensions:system-size-y = 5 !nm
+dimensions:system-size-z = 5 !nm
+create:voronoi-grain-size = 3 !nm
+create:voronoi-grain-spacing = 0.2 !nm
 
 #------------------------------------------
 # Material Files:
@@ -28,8 +31,10 @@ sim:time-step = 1 !fs
 #------------------------------------------
 # Program and integrator details
 #------------------------------------------
-sim:program = benchmark
-sim:integrator = llg-heun
+sim:program = masked-grain-cmc
+sim:integrator = hybrid-constrained-monte-carlo
+sim:constraint-angle-phi = 45.0
+sim:constraint-angle-theta = 0.0
 
 #------------------------------------------
 # data output

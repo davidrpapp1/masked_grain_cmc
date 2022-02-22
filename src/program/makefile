@@ -31,7 +31,8 @@ partial_hysteresis.o \
 static_hysteresis.o \
 setting.o \
 time_series.o \
-temperature_pulse.o
+temperature_pulse.o \
+masked_grain_cmc.o
 
 # Append module objects to global tree
 OBJECTS+=$(addprefix obj/program/,$(program_objects))

@@ -510,6 +510,14 @@ int run(){
 			program::mm_A_calculation();
 			break;
 		//------------------------------------------------------------------------
+		case 55:
+			if(vmpi::my_rank==0){
+				std::cout << "masked grain cmc" << std::endl;
+				zlog << "masked grain cmc" << std::endl;
+			}
+			program::masked_grain_cmc();
+			break;
+		//------------------------------------------------------------------------
 		case 70:
 			if(vmpi::my_rank==0){
 				std::cout << "field-sweep..." << std::endl;
