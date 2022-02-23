@@ -9,10 +9,10 @@
 #------------------------------------------
 create:voronoi-rounded-grains
 create:voronoi-film
-dimensions:system-size-x = 14 !nm
-dimensions:system-size-y = 5 !nm
+dimensions:system-size-x = 50 !nm
+dimensions:system-size-y = 50 !nm
 dimensions:system-size-z = 5 !nm
-create:voronoi-grain-size = 3 !nm
+create:voronoi-grain-size = 8 !nm
 create:voronoi-grain-spacing = 0.2 !nm
 
 #------------------------------------------
